@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="logo-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Council Tax Band Challenge — FAQ | The Digital Income Experiment</title>
+<meta name="description" content="Answers to the most common questions about challenging your council tax band — the 6-month window, 1991 valuations, rejections, new builds, and whether your band can go up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0b12;--surface:#13101e;--surface2:#1c1729;--amber:#f0a500;--amber-dim:#c47e00;--amber-glow:#f0a50022;--purple:#7b4fd4;--purple-lt:#a07de8;--purple-dim:#3d2869;--text:#e8e0f0;--text-muted:#a898c4;--text-dim:#6e5d8a;--border:#2a2040;--border-lt:#3d3060;--radius:6px;--radius-lg:12px;--green:#00dc64}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;font-size:16px;line-height:1.8;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:.35}
+  h1,h2,h3{font-family:'Syne',sans-serif;line-height:1.15}
+  em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--amber)}
+  a{color:var(--amber);text-decoration:none;transition:opacity .2s}
+  a:hover{opacity:.75}
+  nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(13,11,18,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;letter-spacing:.05em;color:var(--text);display:flex;align-items:center;gap:10px;text-decoration:none}
+  .nav-links{display:flex;align-items:center;gap:8px;list-style:none}
+  .nav-links a{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);padding:6px 14px;border-radius:var(--radius);transition:color .2s,background .2s}
+  .nav-links a:hover,.nav-links a.active{color:var(--amber);background:var(--amber-glow)}
+  .nav-links .nav-cta{color:var(--bg);background:var(--amber);font-weight:500;padding:6px 16px}
+  .nav-links .nav-cta:hover{background:#ffc02a;color:var(--bg)}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--text-muted);border-radius:2px}
+  @media(max-width:900px){nav{padding:0 24px}.nav-links{display:none}.nav-hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--border);padding:20px 24px;gap:4px}}
+
+  /* HERO */
+  .page-hero{position:relative;padding:130px 80px 72px;overflow:hidden;border-bottom:1px solid var(--border)}
+  .hero-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none}
+  .orb-1{width:480px;height:480px;background:var(--purple-dim);top:-120px;right:-80px;opacity:.35}
+  .orb-2{width:280px;height:280px;background:#1a0800;bottom:-40px;left:60px;opacity:.4}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:.22;pointer-events:none}
+  .hero-inner{max-width:860px;margin:0 auto;position:relative;animation:fadeUp .7s ease both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .page-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);border:1px solid var(--amber-dim);background:var(--amber-glow);padding:5px 14px;border-radius:100px;margin-bottom:24px}
+  .page-label::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px var(--amber)}
+  .page-hero h1{font-size:clamp(32px,5vw,60px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:16px}
+  .page-hero-sub{font-size:1rem;color:var(--text-muted);max-width:600px;line-height:1.8;margin-bottom:24px}
+  .hero-links{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px;border-radius:var(--radius);font-family:'Syne',sans-serif;font-weight:700;transition:all .2s}
+  .hero-link.primary{background:var(--amber);color:var(--bg)}
+  .hero-link.primary:hover{background:#ffc02a;opacity:1}
+  .hero-link.secondary{border:1px solid var(--border);color:var(--text-muted)}
+  .hero-link.secondary:hover{border-color:var(--amber-dim);color:var(--amber);opacity:1}
+  @media(max-width:640px){.page-hero{padding:100px 20px 52px}}
+
+  /* LAYOUT */
+  .page-layout{max-width:860px;margin:0 auto;padding:64px 80px 100px;display:grid;grid-template-columns:1fr 240px;gap:56px;align-items:start}
+  @media(max-width:880px){.page-layout{grid-template-columns:1fr;padding:48px 20px 80px}}
+
+  /* FAQ */
+  .faq-section-label{font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);display:flex;align-items:center;gap:10px;margin:48px 0 20px}
+  .faq-section-label::before{content:'';display:block;width:24px;height:1px;background:var(--purple-lt)}
+  .faq-section-label:first-child{margin-top:0}
+
+  .faq-item{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:12px;transition:border-color .2s}
+  .faq-item:hover{border-color:var(--border-lt)}
+  .faq-q{width:100%;background:var(--surface);border:none;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;text-align:left;transition:background .2s}
+  .faq-q:hover{background:var(--surface2)}
+  .faq-q-text{font-family:'Syne',sans-serif;font-size:.95rem;font-weight:700;color:var(--text);line-height:1.4}
+  .faq-icon{width:28px;height:28px;border-radius:50%;background:var(--surface2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;color:var(--amber);transition:transform .3s,background .2s}
+  .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--amber-glow);border-color:var(--amber-dim)}
+  .faq-a{display:none;padding:0 24px 22px;background:var(--surface)}
+  .faq-item.open .faq-a{display:block}
+  .faq-a p{font-size:.93rem;color:var(--text-muted);line-height:1.85;margin-bottom:14px}
+  .faq-a p:last-child{margin-bottom:0}
+  .faq-a strong{color:var(--text);font-weight:500}
+  .faq-a a{color:var(--amber)}
+
+  /* CALLOUT BOXES */
+  .callout{border-radius:var(--radius-lg);padding:18px 22px;margin:16px 0}
+  .callout.green{background:rgba(0,220,100,.05);border:1px solid rgba(0,220,100,.18)}
+  .callout.amber{background:var(--amber-glow);border:1px solid var(--amber-dim)}
+  .callout.red{background:rgba(224,82,82,.05);border:1px solid rgba(224,82,82,.18)}
+  .callout.neutral{background:var(--surface2);border:1px solid var(--border)}
+  .callout p{font-size:.88rem;color:var(--text-muted);margin:0;line-height:1.75}
+  .callout p strong{color:var(--text);font-weight:500}
+  .callout.green p strong{color:var(--green)}
+  .callout.amber p strong{color:var(--amber)}
+  .callout.red p strong{color:#e05252}
+
+  /* QUICK LINKS BAR */
+  .quick-links{background:var(--surface);border-bottom:1px solid var(--border);overflow-x:auto}
+  .quick-links-inner{max-width:860px;margin:0 auto;padding:0 80px;display:flex;white-space:nowrap}
+  @media(max-width:640px){.quick-links-inner{padding:0 20px}}
+  .quick-link{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);padding:13px 16px;border-bottom:2px solid transparent;transition:all .2s;display:block;text-decoration:none}
+  .quick-link:hover{color:var(--amber);border-bottom-color:var(--amber)}
+
+  /* SUBSCRIBE */
+  .subscribe-strip{background:var(--surface);border:1px solid var(--border-lt);border-radius:var(--radius-lg);padding:28px;margin:48px 0}
+  .subscribe-strip h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;margin-bottom:8px}
+  .subscribe-strip p{font-size:.88rem;color:var(--text-muted);margin-bottom:18px;line-height:1.7}
+  .sub-gdpr{font-size:.75rem;color:var(--text-dim);line-height:1.6;margin-top:10px;border-top:1px solid var(--border);padding-top:10px}
+  .sub-gdpr a{color:var(--amber)}
+
+  /* SIDEBAR */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:14px}
+  @media(max-width:880px){.sidebar{display:none}}
+  .sc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+  .sh{background:var(--surface2);padding:11px 16px;border-bottom:1px solid var(--border)}
+  .sh h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+  .sh.amb{background:var(--amber)}
+  .sh.amb h4{color:var(--bg)}
+  .sb{padding:12px 16px}
+  .sb p{font-size:.8rem;color:var(--text-dim);margin-bottom:8px;line-height:1.6}
+  .sbtn{display:block;text-align:center;background:var(--surface2);color:var(--text-muted);font-family:'Syne',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:9px;border-radius:var(--radius);text-decoration:none;border:1px solid var(--border);margin-top:8px;transition:all .2s}
+  .sbtn:hover{border-color:var(--amber-dim);color:var(--amber);background:var(--amber-glow)}
+  .sbtn.amb{background:var(--amber);color:var(--bg);border-color:var(--amber)}
+  .sbtn.amb:hover{background:#ffc02a}
+  .faq-count{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--amber);line-height:1;display:block}
+
+  footer{background:var(--surface);border-top:1px solid var(--border)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:48px 80px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+  @media(max-width:640px){.footer-inner{padding:32px 24px;flex-direction:column;text-align:center}}
+  .footer-brand{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:var(--text)}
+  .footer-credit{font-size:12px;color:var(--text-dim);margin-top:4px}
+  .footer-credit a{color:var(--amber)}
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+  .footer-links a{font-size:12px;color:var(--text-dim)}
+  .footer-bottom{border-top:1px solid var(--border);padding:14px 80px;max-width:1200px;margin:0 auto;font-size:11px;color:var(--text-dim);opacity:.6}
+  @media(max-width:640px){.footer-bottom{padding:12px 24px}}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo-icon.png" alt="" style="height:32px;width:auto;display:block;">The Digital Income Experiment</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiments.html">The Experiments</a></li>
+    <li><a href="recommended.html">Recommended</a></li>
+    <li><a href="income-reports.html">Income Reports</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="get-the-guide.html" class="nav-cta">Get The Guide &rarr;</a></li>
+  </ul>
+  <div class="nav-hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="grid-bg"></div>
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-inner">
+    <div class="page-label">Experiment 08 &middot; Council Tax</div>
+    <h1>Council Tax Challenge &mdash; <em>FAQ</em></h1>
+    <p class="page-hero-sub">The questions people actually ask after reading about challenging their council tax band. Seven specific answers — the 6-month window, 1991 valuations, rejection, new builds, comparable properties, and more.</p>
+    <div class="hero-links">
+      <a href="template-council-tax.html" class="hero-link primary">Free challenge letter &rarr;</a>
+      <a href="exp-blog-council-tax.html" class="hero-link secondary">Read the full guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<div class="quick-links">
+  <div class="quick-links-inner">
+    <a href="#q1" class="quick-link">6-month window</a>
+    <a href="#q2" class="quick-link">1991 valuation</a>
+    <a href="#q3" class="quick-link">Rationale &amp; submission</a>
+    <a href="#q4" class="quick-link">If rejected</a>
+    <a href="#q5" class="quick-link">Can band go up?</a>
+    <a href="#q6" class="quick-link">New builds</a>
+    <a href="#q7" class="quick-link">No comparables</a>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="page-layout">
+<main>
+
+  <div class="callout amber reveal" style="margin-bottom:32px">
+    <p><strong>These are the exact questions from the comments.</strong> After writing about reclaiming &pound;1,500+ through a council tax band challenge, the same questions came up repeatedly. This page answers them directly. If your question isn&rsquo;t here, the <a href="exp-blog-council-tax.html">full guide</a> covers the complete process.</p>
+  </div>
+
+  <!-- SECTION 1: TIMING -->
+  <div class="faq-section-label">Timing &amp; eligibility</div>
+
+  <div class="faq-item reveal" id="q1">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">What if I&rsquo;m outside the 6-month window?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>This is probably the most common misconception about council tax challenges. The 6-month window applies to a specific type of challenge called a <strong>&ldquo;proposal to alter&rdquo;</strong> &mdash; where you believe there&rsquo;s been a material change to the property (an extension, a demolition, a significant change in the area) and you want the band reviewed on that basis. That window runs from the date of the change.</p>
+      <p>But there&rsquo;s a completely separate route that has <strong>no time limit at all</strong>: challenging on the grounds that the original 1991 banding was simply wrong. This is the route used in the Experiment &mdash; not a material change challenge, but an original valuation challenge. Anyone, at any time, can submit this type of challenge if they believe their property was incorrectly banded from the outset.</p>
+      <div class="callout green">
+        <p><strong>Bottom line:</strong> If you&rsquo;ve been in your property for 20 years and just found out about challenges, you can still submit. The &ldquo;wrong from the start&rdquo; route has no time limit. You&rsquo;re not too late.</p>
+      </div>
+      <p><strong>How far back does the refund go?</strong> This is where it gets genuinely surprising. The refund is not limited to the date you moved in, and it is not limited to the date you submitted your challenge. The VOA can backdate the band change &mdash; and the refund &mdash; to the point when the incorrect banding began.</p>
+      <p>In the Experiment, the band change was backdated to <strong>2013</strong> &mdash; well before the current occupant moved in. The refund covered the full period of overpayment from that date, not just from the date of the challenge submission or the date of moving in. The council calculated the overpaid amount across all those years and refunded it in full.</p>
+      <div class="callout green">
+        <p><strong>What this means in practice:</strong> If your property was incorrectly banded from a specific point in the past &mdash; even decades ago, even before you lived there &mdash; the refund can go back to that point. The sooner you submit, the sooner the clock stops on the overpayment. But the refund itself can reach back much further than most people expect.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: CALCULATION -->
+  <div class="faq-section-label">Working out the 1991 valuation</div>
+
+  <div class="faq-item reveal" id="q2">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">How do I work out what my property was worth in 1991?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>This is the core of any challenge and the part that puts most people off. The good news is it doesn&rsquo;t need to be precise &mdash; it needs to be <strong>plausible and evidenced</strong>. Here&rsquo;s the method used in the Experiment:</p>
+      <p><strong>Step 1 &mdash; Find a recent sale price for your property.</strong> Check Land Registry (gov.uk/search-house-prices) for the most recent sold price for your specific address. If your property hasn&rsquo;t sold recently, use a comparable property on the same street that has.</p>
+      <p><strong>Step 2 &mdash; Use the Nationwide House Price Index calculator.</strong> Nationwide publish a free calculator at nationwide.co.uk/house-price-index that lets you enter a property value and date and converts it to an estimated value at any other point in time. Enter the recent sale price, the date of that sale, and ask it to calculate the estimated 1991 value. The result is an estimate &mdash; Nationwide are clear about this &mdash; but it&rsquo;s methodologically sound and the VOA understands this approach.</p>
+      <p><strong>Step 3 &mdash; Check the band boundaries.</strong> Band boundaries for England are published on gov.uk. For properties valued up to &pound;40,000 in April 1991, Band A. &pound;40,001&ndash;&pound;52,000 is Band B. &pound;52,001&ndash;&pound;68,000 is Band C. &pound;68,001&ndash;&pound;88,000 is Band D. And so on up to Band H (&pound;320,001+).</p>
+      <div class="callout amber">
+        <p><strong>What you&rsquo;re looking for:</strong> If your estimated 1991 value falls in a lower band than the band you&rsquo;re currently in &mdash; even comfortably within the lower band &mdash; you have a reasonable basis for a challenge. If it&rsquo;s borderline, check your comparables (neighbouring properties) to see whether the pattern holds across the street.</p>
+      </div>
+      <p>You don&rsquo;t need a professional valuation. You don&rsquo;t need a surveyor. The VOA will make their own assessment &mdash; your job is to provide enough reasoned evidence that a review is warranted.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 3: SUBMISSION -->
+  <div class="faq-section-label">The submission process</div>
+
+  <div class="faq-item reveal" id="q3">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Do I need to write a formal rationale? Where do I actually submit?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>You submit your challenge to the <strong>Valuation Office Agency (VOA)</strong> &mdash; not to your council. The two are separate. Your council collects your council tax but has no role in setting or changing the bands. The VOA handles all banding decisions.</p>
+      <p>There are two submission routes:</p>
+      <p><strong>Online:</strong> gov.uk/challenge-council-tax-band &mdash; the VOA&rsquo;s official online challenge form. Straightforward, no account needed, confirmation sent by email.</p>
+      <p><strong>By post:</strong> You can write to the VOA directly. Their contact address is available on gov.uk and via their contact form. Post is slower but equally valid.</p>
+      <p>As for a rationale &mdash; yes, you need to explain <em>why</em> you believe your band is wrong. But it doesn&rsquo;t need to be formal or lengthy. The letter template used in the Experiment covers the key elements: your address, your current band, the comparable properties you&rsquo;re referencing, the estimated 1991 value and how you calculated it, and the band you believe is correct.</p>
+      <div class="callout neutral">
+        <p>The free letter template on this site generates the letter for you based on your specific details. Fill in seven fields, copy, and send. <a href="template-council-tax.html">Use the template &rarr;</a></p>
+      </div>
+      <p>You don&rsquo;t need a solicitor. You don&rsquo;t need a claims company. Do not use a claims company &mdash; they take 25&ndash;40% of any refund for work you can do yourself in 30 minutes.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 4: REJECTION -->
+  <div class="faq-section-label">If things don&rsquo;t go your way</div>
+
+  <div class="faq-item reveal" id="q4">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">What if the VOA rejects my challenge?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>A rejection from the VOA is not the end of the road. If your challenge is unsuccessful at the initial stage, you have the right to appeal to the <strong>Valuation Tribunal for England (VTE)</strong> &mdash; an independent body that hears appeals against VOA decisions. In Scotland and Wales the equivalent bodies are the Scottish Assessors Association and the Valuation Tribunal for Wales respectively.</p>
+      <p>The tribunal process is free to use, does not require legal representation, and is specifically designed to be accessible to ordinary members of the public. You present your evidence, the VOA presents theirs, and a panel makes an independent decision.</p>
+      <div class="callout amber">
+        <p><strong>Before appealing:</strong> Ask the VOA to explain their reasoning in writing. Understanding why they rejected the challenge tells you exactly what additional evidence would be needed for an appeal to succeed. Sometimes a rejection is due to insufficient comparable evidence &mdash; which can be addressed.</p>
+      </div>
+      <p>The tribunal route is more time-consuming than the initial challenge &mdash; in our experience the VOA process alone took over two years. An appeal adds further time. But if your evidence is solid, the route exists and people use it successfully.</p>
+      <p>It&rsquo;s also worth noting: the VOA can revisit a challenge if significant new evidence emerges. If comparable properties on your street have had successful challenges since your rejection, that&rsquo;s new evidence worth raising.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 5: CAN BAND GO UP -->
+  <div class="faq-item reveal" id="q5">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Can my band actually go <em>up</em> if I challenge?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>This is the question that stops a lot of people from submitting, and it deserves a careful answer.</p>
+      <p><strong>Technically, yes &mdash; the VOA can increase a band as well as decrease it.</strong> If you challenge your band and the VOA&rsquo;s investigation concludes your property was actually undervalued in 1991, they could in theory move it to a higher band.</p>
+      <p>In practice, this is rare &mdash; but it is not impossible, and you should be aware of it before submitting.</p>
+      <div class="callout red">
+        <p><strong>The honest risk assessment:</strong> If you have done the calculation and your estimated 1991 value clearly sits in a lower band &mdash; not borderline, but comfortably lower &mdash; the risk of an upward revision is very low. The VOA is assessing the same 1991 value using the same methodology. If the evidence points down, the decision should point down.</p>
+      </div>
+      <p>Where the risk increases: if your property&rsquo;s 1991 value is ambiguous or borderline between bands, or if you haven&rsquo;t checked your comparables carefully. In that case, the VOA&rsquo;s assessment could go either way.</p>
+      <p><strong>The practical rule:</strong> Only challenge if your calculated 1991 value comfortably sits within the lower band, and if comparable properties on your street support the same conclusion. If the evidence is genuinely borderline, the risk of a different outcome is real.</p>
+      <p>In the Experiment, the 1991 estimate came out clearly within Band C territory rather than Band D. The comparable properties supported the same finding. There was no ambiguity &mdash; which is why the challenge was submitted with confidence.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 6: NEW BUILDS -->
+  <div class="faq-section-label">Specific circumstances</div>
+
+  <div class="faq-item reveal" id="q6">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">Can I challenge a new build that didn&rsquo;t exist in 1991?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>Yes &mdash; but the process works differently. Properties built after 1 April 1991 are assigned a band based on an estimated value as if the property had existed on that date. The VOA uses comparable properties and market evidence to derive this figure.</p>
+      <p>New build bands are particularly worth checking for two reasons:</p>
+      <p><strong>First:</strong> The estimated 1991 value is harder to verify for a property that didn&rsquo;t exist, which means there&rsquo;s more room for error in the original assessment. Errors do happen.</p>
+      <p><strong>Second:</strong> New builds are often initially assigned a band at the point of construction completion &mdash; sometimes quickly and without detailed comparable analysis. As the surrounding market establishes itself and more sales data becomes available, the original estimate can look less accurate.</p>
+      <div class="callout amber">
+        <p><strong>How to approach a new build challenge:</strong> The same methodology applies &mdash; find comparable properties of similar size, age, and specification in the same area, use recent sale prices to estimate their 1991 values, and check whether your band sits above where the comparables would suggest. The challenge letter is the same. The submission route is the same.</p>
+      </div>
+      <p>One additional consideration for new builds: if you purchased the property within 6 months of it being completed and believe the band was wrong from the outset, you can use the material change route (which does have a 6-month window) rather than relying solely on the original valuation challenge. Both routes can be pursued.</p>
+    </div>
+  </div>
+
+  <div class="faq-item reveal" id="q7">
+    <button class="faq-q" onclick="toggleFaq(this)">
+      <span class="faq-q-text">What if there are no comparable properties nearby?</span>
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a">
+      <p>This is a genuine challenge &mdash; and in some locations (rural areas, unique property types, unusual configurations) it can make a challenge harder to evidence. But &ldquo;no perfect comparables&rdquo; doesn&rsquo;t mean &ldquo;no comparables at all.&rdquo;</p>
+      <p>The VOA&rsquo;s definition of a comparable is broader than most people assume. You don&rsquo;t need an identical property on the same street. You need properties that share <strong>relevant characteristics</strong> &mdash; similar size, similar age, similar location type &mdash; that have sold at prices allowing a reasonable 1991 estimate.</p>
+      <p><strong>Practical approaches when comparables are thin:</strong></p>
+      <p><strong>1. Widen the search area gradually.</strong> Start with your street, then your postcode, then the wider area. The more geographically distant the comparable, the less weight it carries &mdash; but a comparable from the next village is better than nothing.</p>
+      <p><strong>2. Use multiple imperfect comparables.</strong> Three properties that are reasonably similar are more compelling than one that&rsquo;s perfect. If all three point in the same direction, the pattern is evidence.</p>
+      <p><strong>3. Check the VOA&rsquo;s own data.</strong> You can request the VOA&rsquo;s evidence for your current band assignment by contacting them directly. If their original assessment relied on comparables, you&rsquo;re entitled to see which ones &mdash; and that tells you exactly what you&rsquo;re working against.</p>
+      <div class="callout neutral">
+        <p>If after a thorough search the evidence doesn&rsquo;t support a challenge, that&rsquo;s a valid conclusion too. Don&rsquo;t submit a speculative challenge on thin evidence &mdash; both because it&rsquo;s unlikely to succeed and because of the small risk of an upward revision discussed in Q5 above.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBSCRIBE -->
+  <div class="subscribe-strip reveal">
+    <h3>Get the monthly income report</h3>
+    <p>All nine experiments documented honestly &mdash; including Experiment 08 as the council tax and car finance claims develop. Free, monthly, no pitch.</p>
+    <div style="text-align:left" class="sender-form-field" data-sender-form-id="e0RjXy"></div>
+    <p class="sub-gdpr">By signing up you agree your email will be held by <a href="drs-case-study-exp.html">Digital Revenue Studio</a> on behalf of the Experiment. Used only to send this report. Never sold. <a href="privacy.html">Privacy Policy</a>. Unsubscribe any time.</p>
+  </div>
+
+  <p style="font-size:.85rem;color:var(--text-dim);border-top:1px solid var(--border);padding-top:18px;">Nothing on this page is legal advice. This is a personal account of one experience with the council tax challenge process. Your circumstances, VOA assessment, and outcome will differ. Always verify current band boundaries and submission routes on gov.uk before proceeding.</p>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sc"><div class="sh amb"><h4>Free template</h4></div><div class="sb"><p>The challenge letter &mdash; fill in seven fields, copy, send to the VOA.</p><a href="template-council-tax.html" class="sbtn amb">Get the letter template &rarr;</a></div></div>
+
+  <div class="sc"><div class="sh"><h4>Questions on this page</h4></div><div class="sb" style="padding:6px 16px">
+    <ul style="list-style:none">
+      <li style="border-bottom:1px solid var(--border)"><a href="#q1" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">Outside the 6-month window?</a></li>
+      <li style="border-bottom:1px solid var(--border)"><a href="#q2" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">Working out the 1991 value</a></li>
+      <li style="border-bottom:1px solid var(--border)"><a href="#q3" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">Rationale &amp; where to submit</a></li>
+      <li style="border-bottom:1px solid var(--border)"><a href="#q4" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">What if rejected?</a></li>
+      <li style="border-bottom:1px solid var(--border)"><a href="#q5" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">Can band go up?</a></li>
+      <li style="border-bottom:1px solid var(--border)"><a href="#q6" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">New builds</a></li>
+      <li><a href="#q7" style="display:block;font-size:.75rem;color:var(--text-muted);padding:8px 0;transition:color .2s">No comparables nearby</a></li>
+    </ul>
+  </div></div>
+
+  <div class="sc"><div class="sh"><h4>Related posts</h4></div><div class="sb">
+    <p>The full challenge process &mdash; how to check, calculate, and submit.</p>
+    <a href="exp-blog-council-tax.html" class="sbtn">Full guide &rarr;</a>
+    <a href="exp-blog-council-tax-followup.html" class="sbtn" style="margin-top:6px">How to get the cash refund &rarr;</a>
+  </div></div>
+
+  <div class="sc"><div class="sh"><h4>Experiment 08 result</h4></div><div class="sb">
+    <span class="faq-count">&pound;1,500+</span>
+    <p style="margin-top:4px">Cash refund received. Band D &rarr; C. ~&pound;240/year saving ongoing.</p>
+  </div></div>
+</aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">The Digital Income Experiment</div><div class="footer-credit">Content created by <a href="https://digitalrevenuestudio.co.uk" target="_blank" rel="noopener">Digital Revenue Studio</a></div></div>
+    <div class="footer-links">
+      <a href="about.html">About</a><a href="experiments.html">Experiments</a><a href="income-reports.html">Income Reports</a><a href="blog.html">Blog</a><a href="recommended.html">Recommended</a><a href="privacy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="drs-case-study-exp.html">Supported by DRS</a>
+    </div>
+  </div>
+  <div class="footer-bottom">Nothing on this site is legal advice. Results are personal and not typical. Content created by Digital Revenue Studio.</div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    // Open clicked if it wasn't already open
+    if (!isOpen) item.classList.add('open');
+  }
+  // Open first item by default
+  document.querySelector('.faq-item').classList.add('open');
+
+  document.querySelector('.nav-hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));
+  const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script>
+  (function (s, e, n, d, er) {s['Sender'] = er;s[er] = s[er] || function () {(s[er].q = s[er].q || []).push(arguments)}, s[er].l = 1 * new Date();var a = e.createElement(n),m = e.getElementsByTagName(n)[0];a.async = 1;a.src = d;m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('84286577fb8740')
+</script>
+</body>
+</html>

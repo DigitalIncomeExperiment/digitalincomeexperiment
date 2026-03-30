@@ -349,6 +349,13 @@
   </aside>
 </div>
 
+  <!-- SUBSCRIBE STRIP -->
+  <div style="background:var(--surface);border:1px solid var(--border-lt);border-radius:var(--radius-lg);padding:32px;margin:48px 0" class="reveal">
+    <h3 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:8px">Get the monthly income report</h3>
+    <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:20px;line-height:1.7">Every experiment documented honestly &mdash; what earned, what didn&rsquo;t, and what the real numbers look like. Free, monthly, no pitch.</p>
+    <div style="text-align:left" class="sender-form-field" data-sender-form-id="e0RjXy"></div>
+    <p style="font-size:.75rem;color:var(--text-dim);line-height:1.6;margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">By signing up you agree your email will be held by <a href="drs-case-study-exp.html" style="color:var(--amber)">Digital Revenue Studio</a> on behalf of the Experiment. Used only to send this report. Never sold. <a href="privacy.html" style="color:var(--amber)">Privacy Policy</a>. Unsubscribe any time.</p>
+  </div>
 <footer>
   <div class="footer-inner">
     <div>
@@ -370,6 +377,20 @@
 
 <script>
   document.querySelector('.nav-hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));
+</script>
+<script>
+  (function (s, e, n, d, er) {
+    s['Sender'] = er;
+    s[er] = s[er] || function () {
+      (s[er].q = s[er].q || []).push(arguments)
+    }, s[er].l = 1 * new Date();
+    var a = e.createElement(n),
+        m = e.getElementsByTagName(n)[0];
+    a.async = 1;
+    a.src = d;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('84286577fb8740')
 </script>
 </body>
 </html>

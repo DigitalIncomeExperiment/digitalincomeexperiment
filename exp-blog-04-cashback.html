@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="logo-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cashback Head-to-Head: Quidco vs TopCashback — First Real Test | The Digital Income Experiment</title>
+<meta name="description" content="We needed a new hoover. Quidco offered 3.75%. TopCashback offered 5.75%. Here's exactly what happened next — and what it revealed about how cashback actually works.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0b12;--surface:#13101e;--surface2:#1c1729;--amber:#f0a500;--amber-dim:#c47e00;--amber-glow:#f0a50022;--purple:#7b4fd4;--purple-lt:#a07de8;--purple-dim:#3d2869;--text:#e8e0f0;--text-muted:#a898c4;--text-dim:#6e5d8a;--border:#2a2040;--border-lt:#3d3060;--radius:6px;--radius-lg:12px;--green:#00dc64}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;font-size:16px;line-height:1.8;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:.35}
+  h1,h2,h3{font-family:'Syne',sans-serif;line-height:1.15}
+  em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--amber)}
+  a{color:var(--amber);text-decoration:none;transition:opacity .2s}
+  a:hover{opacity:.75}
+  nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(13,11,18,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;letter-spacing:.05em;color:var(--text);display:flex;align-items:center;gap:10px;text-decoration:none}
+  .nav-links{display:flex;align-items:center;gap:8px;list-style:none}
+  .nav-links a{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);padding:6px 14px;border-radius:var(--radius);transition:color .2s,background .2s}
+  .nav-links a:hover,.nav-links a.active{color:var(--amber);background:var(--amber-glow)}
+  .nav-links .nav-cta{color:var(--bg);background:var(--amber);font-weight:500;padding:6px 16px}
+  .nav-links .nav-cta:hover{background:#ffc02a;color:var(--bg)}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--text-muted);border-radius:2px}
+  @media(max-width:900px){nav{padding:0 24px}.nav-links{display:none}.nav-hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--border);padding:20px 24px;gap:4px}}
+  .post-hero{padding:120px 80px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:.22;pointer-events:none}
+  .hero-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;width:450px;height:450px;background:var(--purple-dim);top:-120px;right:-80px;opacity:.35}
+  .post-hero-inner{max-width:760px;margin:0 auto;position:relative;animation:fadeUp .7s ease both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .post-exp-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px solid var(--amber-dim);background:var(--amber-glow);padding:4px 14px;border-radius:100px;margin-bottom:20px}
+  .post-hero h1{font-size:clamp(26px,4.5vw,48px);font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+  .post-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px;font-size:12px;color:var(--text-dim);letter-spacing:.06em}
+  .post-hero-standfirst{font-size:1rem;color:var(--text-muted);max-width:620px;line-height:1.8}
+  @media(max-width:640px){.post-hero{padding:100px 20px 52px}}
+  .post-layout{max-width:760px;margin:0 auto;padding:64px 80px 100px;display:grid;grid-template-columns:1fr 220px;gap:56px;align-items:start}
+  @media(max-width:860px){.post-layout{grid-template-columns:1fr;padding:48px 20px 80px}}
+  .post-body h2{font-family:'Syne',sans-serif;font-size:clamp(18px,2.5vw,24px);font-weight:800;letter-spacing:-.02em;margin:48px 0 16px;border-bottom:1px solid var(--border);padding-bottom:10px;color:var(--text)}
+  .post-body h2:first-child{margin-top:0}
+  .post-body h3{font-family:'Syne',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--purple-lt);margin:28px 0 10px}
+  .post-body p{font-size:1rem;color:var(--text-muted);line-height:1.9;margin-bottom:18px}
+  .post-body strong{color:var(--text);font-weight:500}
+  .pullquote{border-left:3px solid var(--amber);padding:16px 22px;margin:28px 0;background:var(--amber-glow);border-radius:0 var(--radius) var(--radius) 0}
+  .pullquote p{font-family:'Instrument Serif',serif;font-size:1.1rem;font-style:italic;color:var(--text);margin:0;line-height:1.6}
+  .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+  @media(max-width:500px){.comparison-grid{grid-template-columns:1fr}}
+  .comp-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px 24px}
+  .comp-card.winner{background:var(--amber-glow);border-color:var(--amber-dim)}
+  .comp-platform{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;margin-bottom:4px;color:var(--text)}
+  .comp-platform .win-badge{font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:var(--amber);color:var(--bg);padding:2px 8px;border-radius:100px;margin-left:8px;vertical-align:middle}
+  .comp-rate{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1;margin:10px 0 4px}
+  .comp-card.winner .comp-rate{color:var(--amber)}
+  .comp-card:not(.winner) .comp-rate{color:var(--text-muted)}
+  .comp-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim)}
+  .data-box{background:var(--surface);border:1px solid var(--border-lt);border-radius:var(--radius-lg);padding:22px 24px;margin:24px 0}
+  .data-box-label{font-family:'Syne',sans-serif;font-weight:700;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:14px}
+  .drow{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--border);font-size:.9rem;gap:12px}
+  .drow:last-child{border-bottom:none}
+  .drow-l{color:var(--text-dim)}
+  .drow-v{font-weight:600;color:var(--text);text-align:right}
+  .drow-v.amber{color:var(--amber)}
+  .drow-v.green{color:var(--green)}
+  .drow-v.muted{color:var(--text-muted)}
+  .info-box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--purple-lt);border-radius:var(--radius-lg);padding:18px 22px;margin:20px 0}
+  .info-box p{font-size:.9rem;color:var(--text-muted);line-height:1.75;margin:0}
+  .info-box.amber-box{border-left-color:var(--amber)}
+  .info-box p strong{color:var(--amber)}
+  .verdict-box{border-radius:var(--radius-lg);padding:20px 24px;margin:20px 0}
+  .verdict-box.green{background:rgba(0,220,100,.05);border:1px solid rgba(0,220,100,.18)}
+  .verdict-box.amber{background:var(--amber-glow);border:1px solid var(--amber-dim)}
+  .verdict-box.neutral{background:var(--surface);border:1px solid var(--border)}
+  .vlabel{font-family:'Syne',sans-serif;font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+  .verdict-box.green .vlabel{color:var(--green)}
+  .verdict-box.amber .vlabel{color:var(--amber)}
+  .verdict-box.neutral .vlabel{color:var(--text-muted)}
+  .verdict-box p{font-size:.9rem;color:var(--text-muted);line-height:1.75;margin:0}
+  .divider{height:1px;background:var(--border);margin:48px 0}
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:14px}
+  @media(max-width:860px){.sidebar{display:none}}
+  .sc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+  .sh{background:var(--surface2);padding:11px 16px;border-bottom:1px solid var(--border)}
+  .sh h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+  .sb{padding:12px 16px}
+  .sb p{font-size:.8rem;color:var(--text-dim);margin-bottom:8px;line-height:1.6}
+  .sbtn{display:block;text-align:center;background:var(--surface2);color:var(--text-muted);font-family:'Syne',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:9px;border-radius:var(--radius);text-decoration:none;border:1px solid var(--border);margin-top:8px;transition:all .2s}
+  .sbtn:hover{border-color:var(--amber-dim);color:var(--amber);background:var(--amber-glow)}
+  footer{background:var(--surface);border-top:1px solid var(--border)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:48px 80px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+  @media(max-width:640px){.footer-inner{padding:32px 24px;flex-direction:column;text-align:center}}
+  .footer-brand{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:var(--text)}
+  .footer-credit{font-size:12px;color:var(--text-dim);margin-top:4px}
+  .footer-credit a{color:var(--amber)}
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+  .footer-links a{font-size:12px;color:var(--text-dim)}
+  .footer-bottom{border-top:1px solid var(--border);padding:14px 80px;max-width:1200px;margin:0 auto;font-size:11px;color:var(--text-dim);opacity:.6}
+  @media(max-width:640px){.footer-bottom{padding:12px 24px}}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo-icon.png" alt="" style="height:32px;width:auto;display:block;">The Digital Income Experiment</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiments.html">The Experiments</a></li>
+    <li><a href="recommended.html">Recommended</a></li>
+    <li><a href="income-reports.html">Income Reports</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="get-the-guide.html" class="nav-cta">Get The Guide &rarr;</a></li>
+  </ul>
+  <div class="nav-hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="post-hero">
+  <div class="grid-bg"></div>
+  <div class="hero-orb"></div>
+  <div class="post-hero-inner">
+    <div class="post-exp-tag">Experiment 05 &middot; Cashback</div>
+    <h1>Quidco vs TopCashback &mdash; first real head-to-head result</h1>
+    <div class="post-meta">
+      <span>March 2026</span><span>&middot;</span><span>Experiment 05</span><span>&middot;</span><span>5 min read</span>
+    </div>
+    <p class="post-hero-standfirst">We needed a new hoover. Quidco offered 3.75% cashback through Currys. TopCashback offered 5.75%. The decision was easy &mdash; but what happened after clicking through was more interesting than expected.</p>
+  </div>
+</section>
+
+<div class="post-layout">
+<article class="post-body">
+
+  <h2 id="setup">The setup</h2>
+
+  <p>Experiment 05 is running both major UK cashback platforms simultaneously &mdash; not one after the other, but at the same time &mdash; so when a qualifying purchase comes up, the rates can be compared directly and the better one chosen. The experiment documents every decision and every result honestly.</p>
+
+  <p>The first real test came when we needed a new hoover. A practical, necessary purchase &mdash; not manufactured for the sake of the experiment. The kind of spending that happens anyway, which is precisely when cashback earns its keep.</p>
+
+  <div class="pullquote">
+    <p>&ldquo;The best cashback purchase is one you were already going to make. The cashback is pure addition &mdash; nothing was spent just to earn it.&rdquo;</p>
+  </div>
+
+  <h2 id="comparison">The head-to-head</h2>
+
+  <p>Both platforms checked before purchasing. The retailer: Currys. The category: floorcare. The rates at the time of purchase:</p>
+
+  <div class="comparison-grid reveal">
+    <div class="comp-card">
+      <div class="comp-platform">Quidco</div>
+      <div class="comp-rate">3.75%</div>
+      <div class="comp-label">Floorcare at Currys</div>
+    </div>
+    <div class="comp-card winner">
+      <div class="comp-platform">TopCashback <span class="win-badge">Chosen</span></div>
+      <div class="comp-rate">5.75%</div>
+      <div class="comp-label">Floorcare at Currys</div>
+    </div>
+  </div>
+
+  <p>TopCashback was 2 percentage points higher for this category on this retailer. On a purchase of £189.99, that difference is meaningful &mdash; so TopCashback was used for this transaction.</p>
+
+  <h2 id="what-happened">What happened after clicking through</h2>
+
+  <p>This is where cashback gets more nuanced than the headline rate suggests &mdash; and it's worth documenting honestly.</p>
+
+  <p>The purchase was completed at £189.99. TopCashback tracked the cashback almost immediately, which is a good sign. But the tracked value wasn't £189.99 &mdash; it was <strong>£158.33</strong>. And the cashback shown was <strong>£1.65</strong>, not the &pound;10.92 that 5.75% of &pound;189.99 would produce.</p>
+
+  <div class="info-box amber-box reveal">
+    <p><strong>Why does the tracked value differ from the purchase price?</strong> Merchants often track cashback at a lower value than the purchase total &mdash; VAT, delivery charges, and certain product categories can be excluded depending on the retailer's cashback terms. The platform shows a message stating the merchant tracks at a lower rate, and that the value will be uplifted to the correct amount when the purchase is verified. This is normal &mdash; but worth knowing before you assume the headline rate applies to the full basket.</p>
+  </div>
+
+  <h2 id="numbers">The actual numbers</h2>
+
+  <div class="data-box reveal">
+    <div class="data-box-label">Transaction breakdown</div>
+    <div class="drow"><span class="drow-l">Retailer</span><span class="drow-v">Currys</span></div>
+    <div class="drow"><span class="drow-l">Purchase</span><span class="drow-v">Hoover (floorcare)</span></div>
+    <div class="drow"><span class="drow-l">Amount paid</span><span class="drow-v">£189.99</span></div>
+    <div class="drow"><span class="drow-l">Quidco rate offered</span><span class="drow-v muted">3.75%</span></div>
+    <div class="drow"><span class="drow-l">TopCashback rate offered</span><span class="drow-v amber">5.75% ✓ chosen</span></div>
+    <div class="drow"><span class="drow-l">Platform tracked value</span><span class="drow-v">£158.33</span></div>
+    <div class="drow"><span class="drow-l">Cashback tracked</span><span class="drow-v green">£1.65</span></div>
+    <div class="drow"><span class="drow-l">Tracking speed</span><span class="drow-v">Immediate</span></div>
+    <div class="drow"><span class="drow-l">Status</span><span class="drow-v amber">Tracked &mdash; pending verification</span></div>
+    <div class="drow"><span class="drow-l">Estimated payout</span><span class="drow-v">~9 weeks</span></div>
+  </div>
+
+  <h2 id="what-to-watch">What to watch</h2>
+
+  <p>The key question now: does the cashback uplift to the correct value on verification, as the platform states it will? The figure of £1.65 is on a tracked value of £158.33. If the full purchase price of £189.99 is verified, the cashback should be closer to the headline rate applied to that full amount.</p>
+
+  <p>This will be documented in the income report for the month it clears. Until then, £1.65 is what's tracked &mdash; and that's what gets reported here. Nothing gets counted until the money is confirmed.</p>
+
+  <div class="divider"></div>
+
+  <h2 id="lessons">Early lessons from Experiment 05</h2>
+
+  <div class="verdict-box green reveal">
+    <div class="vlabel">&#10003; Always check both platforms before any qualifying purchase</div>
+    <p>The rate difference on this transaction was 2 percentage points. On a £189.99 purchase that's a meaningful gap. Takes 60 seconds to check both. Always worth doing.</p>
+  </div>
+
+  <div class="verdict-box amber reveal">
+    <div class="vlabel">&rarr; The tracked value is often lower than the purchase price</div>
+    <p>Don't assume the headline cashback rate applies to your full basket. Delivery, VAT, and specific product types can be excluded. Check the retailer's terms on each platform before purchasing if the amount matters.</p>
+  </div>
+
+  <div class="verdict-box neutral reveal">
+    <div class="vlabel">&middot; Fast tracking is a good sign, but not a guarantee</div>
+    <p>Immediate tracking is encouraging &mdash; it means the click-through registered and the platform knows a purchase happened. The actual cashback amount is confirmed later, after the retailer's return window closes. Patience required.</p>
+  </div>
+
+  
+  <div class="info-box" style="border-left-color:#e05252;background:rgba(224,82,82,.04);">
+    <p><strong style="color:#e05252;">&#9888; Watch out &mdash; first-purchase-only cashback</strong><br>Many cashback offers are for <strong>new customers only</strong>. If you&rsquo;ve ever used the retailer or service before, the cashback won&rsquo;t pay out &mdash; even if it tracked. Always check the terms before completing a purchase. This caught us out on NordVPN &mdash; the cashback tracked, then was later declined because it wasn&rsquo;t a first-time purchase. The golden rule: if you&rsquo;ve used it before, assume the cashback won&rsquo;t apply.</p>
+  </div>
+
+  <p style="margin-top:32px;font-size:.88rem;color:var(--text-dim);border-top:1px solid var(--border);padding-top:18px;">This is a live experiment. Results &mdash; including the final confirmed cashback figure when it clears &mdash; will be published in the <a href="income-reports.html">monthly income reports</a>. Nothing is counted until the money is confirmed.</p>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sc"><div class="sh"><h4>This transaction</h4></div><div class="sb">
+    <div style="margin-bottom:10px"><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">Platform chosen</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--amber)">TopCashback</div></div>
+    <div style="margin-bottom:10px"><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">Rate</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--text)">5.75%</div></div>
+    <div style="margin-bottom:10px"><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">Tracked</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--green)">£1.65</div></div>
+    <div><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">Est. payout</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--text-muted)">~9 weeks</div></div>
+  </div></div>
+  <div class="sc"><div class="sh"><h4>Experiment 05</h4></div><div class="sb"><p>Full cashback platform comparison — rates, coverage, payout speed.</p><a href="recommended-cashback.html" class="sbtn">See cashback pages &rarr;</a></div></div>
+  <div class="sc"><div class="sh"><h4>Income reports</h4></div><div class="sb"><p>All confirmed figures published monthly.</p><a href="income-reports.html" class="sbtn">View reports &rarr;</a></div></div>
+  <div class="sc"><div class="sh"><h4>All posts</h4></div><div class="sb"><a href="blog.html" class="sbtn">Back to blog &rarr;</a></div></div>
+</aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">The Digital Income Experiment</div><div class="footer-credit">Content created by <a href="https://digitalrevenuestudio.co.uk" target="_blank" rel="noopener">Digital Revenue Studio</a></div></div>
+    <div class="footer-links">
+      <a href="about.html">About</a><a href="experiments.html">Experiments</a><a href="income-reports.html">Income Reports</a><a href="blog.html">Blog</a><a href="recommended.html">Recommended</a><a href="privacy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="drs-case-study-exp.html">Supported by DRS</a>
+    </div>
+  </div>
+  <div class="footer-bottom">Nothing on this site is financial or legal advice. Results are personal and not typical. Content created by Digital Revenue Studio.</div>
+</footer>
+<script>
+  document.querySelector('.nav-hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));
+  const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

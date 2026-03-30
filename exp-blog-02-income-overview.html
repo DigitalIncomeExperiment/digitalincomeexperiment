@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="logo-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nine Income Streams: What We Set Up and What Happened in Month One | The Digital Income Experiment</title>
+<meta name="description" content="A full overview of all nine income experiments — what each one is, how it was set up, and what the first month actually produced. Real numbers, honest verdicts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0b12;--surface:#13101e;--surface2:#1c1729;--amber:#f0a500;--amber-dim:#c47e00;--amber-glow:#f0a50022;--purple:#7b4fd4;--purple-lt:#a07de8;--purple-dim:#3d2869;--text:#e8e0f0;--text-muted:#a898c4;--text-dim:#6e5d8a;--border:#2a2040;--border-lt:#3d3060;--radius:6px;--radius-lg:12px;--green:#00dc64}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;font-size:16px;line-height:1.8;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:.35}
+  h1,h2,h3{font-family:'Syne',sans-serif;line-height:1.15}
+  em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--amber)}
+  a{color:var(--amber);text-decoration:none;transition:opacity .2s}
+  a:hover{opacity:.75}
+  nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(13,11,18,.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+  .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;letter-spacing:.05em;color:var(--text);display:flex;align-items:center;gap:10px;text-decoration:none}
+  .nav-links{display:flex;align-items:center;gap:8px;list-style:none}
+  .nav-links a{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);padding:6px 14px;border-radius:var(--radius);transition:color .2s,background .2s}
+  .nav-links a:hover,.nav-links a.active{color:var(--amber);background:var(--amber-glow)}
+  .nav-links .nav-cta{color:var(--bg);background:var(--amber);font-weight:500;padding:6px 16px}
+  .nav-links .nav-cta:hover{background:#ffc02a;color:var(--bg)}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+  .nav-hamburger span{display:block;width:22px;height:2px;background:var(--text-muted);border-radius:2px}
+  @media(max-width:900px){nav{padding:0 24px}.nav-links{display:none}.nav-hamburger{display:flex}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--border);padding:20px 24px;gap:4px}}
+  .post-hero{padding:120px 80px 64px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+  .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:.22;pointer-events:none}
+  .hero-orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;width:450px;height:450px;background:var(--purple-dim);top:-120px;right:-80px;opacity:.35}
+  .post-hero-inner{max-width:760px;margin:0 auto;position:relative;animation:fadeUp .7s ease both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .post-exp-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px solid var(--amber-dim);background:var(--amber-glow);padding:4px 14px;border-radius:100px;margin-bottom:20px}
+  .post-hero h1{font-size:clamp(26px,4.5vw,48px);font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+  .post-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px;font-size:12px;color:var(--text-dim);letter-spacing:.06em}
+  .post-hero-standfirst{font-size:1rem;color:var(--text-muted);max-width:620px;line-height:1.8}
+  @media(max-width:640px){.post-hero{padding:100px 20px 52px}}
+  .post-layout{max-width:760px;margin:0 auto;padding:64px 80px 100px;display:grid;grid-template-columns:1fr 220px;gap:56px;align-items:start}
+  @media(max-width:860px){.post-layout{grid-template-columns:1fr;padding:48px 20px 80px}}
+  .post-body h2{font-family:'Syne',sans-serif;font-size:clamp(18px,2.5vw,24px);font-weight:800;letter-spacing:-.02em;margin:48px 0 16px;border-bottom:1px solid var(--border);padding-bottom:10px;color:var(--text);scroll-margin-top:90px}
+  .post-body h2:first-child{margin-top:0}
+  .post-body p{font-size:1rem;color:var(--text-muted);line-height:1.9;margin-bottom:18px}
+  .post-body strong{color:var(--text);font-weight:500}
+  .post-body a{color:var(--amber)}
+  .pullquote{border-left:3px solid var(--amber);padding:16px 22px;margin:28px 0;background:var(--amber-glow);border-radius:0 var(--radius) var(--radius) 0}
+  .pullquote p{font-family:'Instrument Serif',serif;font-size:1.1rem;font-style:italic;color:var(--text);margin:0;line-height:1.6}
+  .stream-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:20px 0}
+  .stream-hd{background:var(--surface2);padding:14px 22px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .stream-num{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--text-dim)}
+  .stream-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700}
+  .stream-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px}
+  .badge-earn{background:rgba(0,220,100,.1);color:var(--green);border:1px solid rgba(0,220,100,.2)}
+  .badge-act{background:var(--amber-glow);color:var(--amber);border:1px solid var(--amber-dim)}
+  .badge-pend{background:rgba(87,73,112,.2);color:var(--text-dim);border:1px solid var(--border)}
+  .stream-body{padding:18px 22px}
+  .stream-body p{font-size:.9rem;color:var(--text-muted);line-height:1.75;margin-bottom:10px}
+  .stream-body p:last-child{margin-bottom:0}
+  .stream-val{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--green);margin-top:10px}
+  .stream-val.amber{color:var(--amber)}
+  .stream-val.muted{color:var(--text-dim);font-size:1rem;font-weight:500}
+  .totals-box{background:linear-gradient(135deg,var(--surface),#1a1030);border:1px solid var(--border-lt);border-radius:var(--radius-lg);padding:28px;margin:32px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative;overflow:hidden}
+  @media(max-width:500px){.totals-box{grid-template-columns:1fr}}
+  .totals-box::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,var(--amber-glow),transparent 70%);pointer-events:none}
+  .total-item{text-align:center}
+  .total-val{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--amber);display:block;line-height:1}
+  .total-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-top:4px;display:block}
+  .divider{height:1px;background:var(--border);margin:48px 0}
+  .subscribe-strip{background:var(--surface);border:1px solid var(--border-lt);border-radius:var(--radius-lg);padding:32px;margin:48px 0}
+  .subscribe-strip h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:8px}
+  .subscribe-strip p.intro{font-size:.9rem;color:var(--text-muted);margin-bottom:20px;line-height:1.7}
+  .sub-gdpr{font-size:.75rem;color:var(--text-dim);line-height:1.6;margin-top:12px;border-top:1px solid var(--border);padding-top:12px}
+  .sub-gdpr a{color:var(--amber)}
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:14px}
+  @media(max-width:860px){.sidebar{display:none}}
+  .sc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden}
+  .sh{background:var(--surface2);padding:11px 16px;border-bottom:1px solid var(--border)}
+  .sh h4{font-family:'Syne',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+  .sb{padding:12px 16px}
+  .sb p{font-size:.8rem;color:var(--text-dim);margin-bottom:8px;line-height:1.6}
+  .sbtn{display:block;text-align:center;background:var(--surface2);color:var(--text-muted);font-family:'Syne',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:9px;border-radius:var(--radius);text-decoration:none;border:1px solid var(--border);margin-top:8px;transition:all .2s}
+  .sbtn:hover{border-color:var(--amber-dim);color:var(--amber);background:var(--amber-glow)}
+  footer{background:var(--surface);border-top:1px solid var(--border)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:48px 80px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+  @media(max-width:640px){.footer-inner{padding:32px 24px;flex-direction:column;text-align:center}}
+  .footer-brand{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:var(--text)}
+  .footer-credit{font-size:12px;color:var(--text-dim);margin-top:4px}
+  .footer-credit a{color:var(--amber)}
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+  .footer-links a{font-size:12px;color:var(--text-dim)}
+  .footer-bottom{border-top:1px solid var(--border);padding:14px 80px;max-width:1200px;margin:0 auto;font-size:11px;color:var(--text-dim);opacity:.6}
+  @media(max-width:640px){.footer-bottom{padding:12px 24px}}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo-icon.png" alt="" style="height:32px;width:auto;display:block;">The Digital Income Experiment</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="experiments.html">The Experiments</a></li>
+    <li><a href="recommended.html">Recommended</a></li>
+    <li><a href="income-reports.html">Income Reports</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="get-the-guide.html" class="nav-cta">Get The Guide &rarr;</a></li>
+  </ul>
+  <div class="nav-hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<section class="post-hero">
+  <div class="grid-bg"></div>
+  <div class="hero-orb"></div>
+  <div class="post-hero-inner">
+    <div class="post-exp-tag">Income Overview &middot; All 9 Experiments</div>
+    <h1>Nine income streams: what we set up and what happened</h1>
+    <div class="post-meta"><span>March 2026</span><span>&middot;</span><span>All experiments</span><span>&middot;</span><span>10 min read</span></div>
+    <p class="post-hero-standfirst">Three months in. Four experiments confirmed earning. &pound;58.84 confirmed across all streams. Here&rsquo;s the full honest picture &mdash; every stream, what it involved, and what it has actually produced.</p>
+  </div>
+</section>
+
+<div class="post-layout">
+<article class="post-body">
+
+  <h2 id="why">Why nine at once?</h2>
+  <p>Most online income guides test one thing at a time. The Experiment runs all nine simultaneously for a specific reason: to compare real returns under the same conditions, in the same time period, with the same person behind all of them. No cherry-picking. No starting the clock when things got good. Everything from zero, everything at once.</p>
+
+  <div class="pullquote">
+    <p>&ldquo;The honest answer to whether online income is real isn&rsquo;t one data point. It&rsquo;s nine, running in parallel, with nothing held back.&rdquo;</p>
+  </div>
+
+  <div class="totals-box reveal">
+    <div class="total-item"><span class="total-val">&pound;58.84+</span><span class="total-label">Confirmed earned</span></div>
+    <div class="total-item"><span class="total-val">4</span><span class="total-label">Streams earning</span></div>
+    <div class="total-item"><span class="total-val">3</span><span class="total-label">Months running</span></div>
+  </div>
+
+  <h2 id="streams">All nine &mdash; what they are and what they&rsquo;ve produced</h2>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 01</div><div class="stream-title">KDP &mdash; Kindle Publishing</div></div><span class="stream-badge badge-earn">Earning</span></div>
+    <div class="stream-body"><p>Self-publishing a book on Amazon KDP. Free to publish. Royalties up to 70% on ebooks. The challenge: getting discovered without an existing audience. First royalties confirmed in March.</p><div class="stream-val">&pound;24.40 cumulative</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 02</div><div class="stream-title">Digital Products &mdash; Payhip</div></div><span class="stream-badge badge-pend">No sales yet</span></div>
+    <div class="stream-body"><p>A Content Debt Management tool listed on Payhip. Free plan, 5% transaction fee. The cold start problem is real &mdash; no existing audience means no organic discovery yet. Listed and waiting.</p><div class="stream-val muted">&pound;0.00</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 03</div><div class="stream-title">Affiliate Marketing</div></div><span class="stream-badge badge-earn">Earning</span></div>
+    <div class="stream-body"><p>Recommending products through tracked links across multiple networks. Only things actually used are listed. No paid promotion. Amazon Associates generating small but real commissions.</p><div class="stream-val amber">&pound;0.57 cumulative</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 04</div><div class="stream-title">Earn by Playing Games</div></div><span class="stream-badge badge-earn">Earning &mdash; ongoing</span></div>
+    <div class="stream-body"><p>Three reward platforms tested: Freecash, InboxPounds, EarnLabs. Started 16 March. 6 hours 40 minutes played. &pound;82.69 earned gross, &pound;53.97 in costs (in-app purchases required by some offers). Net profit &pound;28.72 at an effective rate of ~&pound;4.30/hr. Experiment ongoing.</p><div class="stream-val">&pound;28.72 net (March only)</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 05</div><div class="stream-title">Cashback &mdash; Quidco vs TopCashback</div></div><span class="stream-badge badge-act">Tracked &mdash; pending</span></div>
+    <div class="stream-body"><p>Both major UK cashback platforms running simultaneously. First real test: a hoover through Currys. Quidco offered 3.75%, TopCashback offered 5.75% &mdash; chose TopCashback. &pound;1.65 tracked, ~9 weeks to confirm. <a href="exp-blog-04-cashback.html">Full breakdown &rarr;</a></p><div class="stream-val amber">&pound;1.65 tracked (not yet confirmed)</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 06</div><div class="stream-title">Surveys &mdash; Amazon Shopper Panel</div></div><span class="stream-badge badge-earn">Earning</span></div>
+    <div class="stream-body"><p>Amazon&rsquo;s survey platform for shoppers. Quick, targeted surveys &mdash; better than most alternatives for disqualification rate. 19 surveys completed in March. Pays in Amazon credit.</p><div class="stream-val">&pound;5.15 (March)</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 07</div><div class="stream-title">Fiverr Freelancing</div></div><span class="stream-badge badge-pend">0 orders</span></div>
+    <div class="stream-body"><p>Three gigs live. Zero clicks so far &mdash; the algorithm heavily favours sellers with existing reviews. Gig optimisation work in progress. The cold start problem is the experiment here.</p><div class="stream-val muted">&pound;0.00</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 08</div><div class="stream-title">Earn While You Spend</div></div><span class="stream-badge badge-earn">£1,500+ confirmed</span></div>
+    <div class="stream-body"><p>Two consumer rights claims. Council tax band challenge: Band D to Band C, &pound;1,500+ cash refund received, ~&pound;240/year saving ongoing. Car finance DCA: 3 negative DCAs confirmed (Black Horse, MotoNovo, Mann Island) &mdash; FCA redress scheme expected May 2026. <a href="exp-blog-council-tax.html">Council tax post &rarr;</a> &nbsp; <a href="exp-blog-car-finance-dca.html">Car finance post &rarr;</a></p><div class="stream-val">&pound;1,500+ (council tax &mdash; cash received)</div></div>
+  </div>
+
+  <div class="stream-card reveal">
+    <div class="stream-hd"><div><div class="stream-num">Experiment 09</div><div class="stream-title">Ko-fi</div></div><span class="stream-badge badge-pend">£0</span></div>
+    <div class="stream-body"><p>A voluntary tip jar taking 0% fee. No direct requests made. Testing whether honest content generates organic reader support without asking. Nothing received yet &mdash; which is the honest answer.</p><div class="stream-val muted">&pound;0.00</div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2 id="verdict">The honest three-month verdict</h2>
+
+  <p><strong>What&rsquo;s working:</strong> KDP is generating passive income &mdash; small but consistent. Surveys are easy money for low time investment. Games produced the biggest single monthly figure but requires active time and involves costs. Affiliate income is growing slowly but is real.</p>
+
+  <p><strong>What isn&rsquo;t working yet:</strong> Digital products need traffic to sell. Fiverr needs the first review to build momentum. Ko-fi needs an audience that feels invested enough to tip voluntarily.</p>
+
+  <p><strong>The biggest result:</strong> Experiment 08 &mdash; the consumer rights claims. &pound;1,500+ from a council tax challenge that cost nothing and took one phone call to convert to cash. The car finance DCA result is still pending but could exceed everything else combined. Neither of these is a &ldquo;passive income stream&rdquo; in the traditional sense &mdash; but they&rsquo;re the most powerful reminder that sometimes the best income opportunity is money you&rsquo;ve already overpaid.</p>
+
+  <!-- SUBSCRIBE STRIP -->
+  <div class="subscribe-strip reveal">
+    <h3>Get the monthly income report</h3>
+    <p class="intro">Every experiment documented honestly &mdash; what earned, what didn&rsquo;t, and what the real numbers look like. Free, monthly, no pitch.</p>
+    <div style="text-align:left" class="sender-form-field" data-sender-form-id="e0RjXy"></div>
+    <p class="sub-gdpr">By signing up you agree your email will be held by <a href="drs-case-study-exp.html">Digital Revenue Studio</a> on behalf of the Experiment. Used only to send this report. Never sold. <a href="privacy.html">Privacy Policy</a>. Unsubscribe any time.</p>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sc"><div class="sh"><h4>March totals</h4></div><div class="sb">
+    <div style="margin-bottom:10px"><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">March confirmed</div><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:var(--amber)">&pound;39.92</div></div>
+    <div><div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);margin-bottom:2px">Cumulative</div><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:22px;color:var(--green)">&pound;58.84+</div></div>
+  </div></div>
+  <div class="sc"><div class="sh"><h4>All experiments</h4></div><div class="sb"><p>Live status and details for all nine streams.</p><a href="experiments.html" class="sbtn">See all experiments &rarr;</a></div></div>
+  <div class="sc"><div class="sh"><h4>Income reports</h4></div><div class="sb"><p>Full monthly breakdowns with verified figures.</p><a href="income-reports.html" class="sbtn">View reports &rarr;</a></div></div>
+  <div class="sc"><div class="sh"><h4>Free templates</h4></div><div class="sb"><p>Council tax and car finance claim letters.</p><a href="template-council-tax.html" class="sbtn">Council Tax &rarr;</a><a href="template-car-finance.html" class="sbtn" style="margin-top:6px">Car Finance &rarr;</a></div></div>
+</aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">The Digital Income Experiment</div><div class="footer-credit">Content created by <a href="https://digitalrevenuestudio.co.uk" target="_blank" rel="noopener">Digital Revenue Studio</a></div></div>
+    <div class="footer-links">
+      <a href="about.html">About</a><a href="experiments.html">Experiments</a><a href="income-reports.html">Income Reports</a><a href="blog.html">Blog</a><a href="recommended.html">Recommended</a><a href="privacy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="drs-case-study-exp.html">Supported by DRS</a>
+    </div>
+  </div>
+  <div class="footer-bottom">Nothing on this site is financial or legal advice. Results are personal and not typical. Content created by Digital Revenue Studio.</div>
+</footer>
+<script>
+  document.querySelector('.nav-hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));
+  const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target)}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script>
+  (function (s, e, n, d, er) {s['Sender'] = er;s[er] = s[er] || function () {(s[er].q = s[er].q || []).push(arguments)}, s[er].l = 1 * new Date();var a = e.createElement(n),m = e.getElementsByTagName(n)[0];a.async = 1;a.src = d;m.parentNode.insertBefore(a, m)})(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+  sender('84286577fb8740')
+</script>
+</body>
+</html>

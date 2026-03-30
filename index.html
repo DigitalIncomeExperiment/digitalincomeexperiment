@@ -162,6 +162,30 @@
   }
 
   /* ─── HERO ─── */
+  .hero-logo-large {
+    position: absolute;
+    top: 72px;
+    right: 60px;
+    left: auto;
+    transform: none;
+    width: clamp(280px, 36vw, 580px);
+    height: auto;
+    z-index: 2;
+    animation: fadeUp 0.7s ease both;
+    filter: drop-shadow(0 16px 60px rgba(123,79,212,.35)) drop-shadow(0 8px 32px rgba(0,0,0,.7));
+    opacity: 0.92;
+  }
+  @media(max-width:1100px){.hero-logo-large{width:clamp(220px,30vw,420px);right:40px;}}
+  @media(max-width:900px){
+    .hero-logo-large{
+      position:relative;
+      top:auto;
+      right:auto;
+      width:clamp(180px,50vw,300px);
+      margin:0 auto 28px;
+      display:block;
+    }
+  }
   .hero {
     position: relative;
     min-height: 100vh;
@@ -1135,7 +1159,6 @@
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
-    <img src="logo-icon.png" alt="The Digital Income Experiment" style="height:32px;width:auto;display:block;">
     The Digital Income Experiment
   </a>
   <ul class="nav-links" id="nav-links">
@@ -1154,12 +1177,11 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img src="logo.png" alt="The Digital Income Experiment" class="hero-logo-large">
   <div class="grid-bg"></div>
   <div class="hero-orb hero-orb-1"></div>
   <div class="hero-orb hero-orb-2"></div>
 
-  <img src="logo.png" alt="The Digital Income Experiment" style="height:140px;width:auto;margin-bottom:32px;display:block;animation:fadeUp .7s ease both;" class="hero-logo">
-  <img src="logo.png" alt="The Digital Income Experiment" style="height:100px;width:auto;display:block;margin-bottom:8px;animation:fadeUp .6s ease both;">
 
   <div class="hero-tag">Independent Income Research · Est. 2026</div>
 
@@ -1181,7 +1203,7 @@
     </div>
     <div class="hero-divider"></div>
     <div class="hero-stat">
-      <span class="hero-stat-value">£24.52+</span>
+      <span class="hero-stat-value">£58.84+</span>
       <span class="hero-stat-label">Confirmed Earned</span>
     </div>
     <div class="hero-divider"></div>
@@ -1210,7 +1232,7 @@
 <div class="ticker-wrap">
   <div class="ticker-track">
     <!-- set 1 -->
-    <span class="ticker-item highlight"><span class="dot"></span>KDP · £18.80 Feb · £5.60 Mar</span>
+    <span class="ticker-item highlight"><span class="dot"></span>KDP · £5.60 · Games · £28.72 · Surveys · £5.15</span>
     <span class="ticker-item"><span class="dot"></span>Cashback — Quidco &amp; TopCashback active</span>
     <span class="ticker-item"><span class="dot"></span>Fiverr — 3 gigs live</span>
     <span class="ticker-item highlight"><span class="dot"></span>Amazon Shopper Panel — surveys running</span>
@@ -1219,7 +1241,7 @@
     <span class="ticker-item highlight"><span class="dot"></span>Games — Freecash · InboxPounds · EarnLabs</span>
     <span class="ticker-item"><span class="dot"></span>Digital Products — CDM tool on Payhip</span>
     <!-- set 2 (duplicate for seamless loop) -->
-    <span class="ticker-item highlight"><span class="dot"></span>KDP · £18.80 Feb · £5.60 Mar</span>
+    <span class="ticker-item highlight"><span class="dot"></span>KDP · £5.60 · Games · £28.72 · Surveys · £5.15</span>
     <span class="ticker-item"><span class="dot"></span>Cashback — Quidco &amp; TopCashback active</span>
     <span class="ticker-item"><span class="dot"></span>Fiverr — 3 gigs live</span>
     <span class="ticker-item highlight"><span class="dot"></span>Amazon Shopper Panel — surveys running</span>
@@ -1417,7 +1439,7 @@
           </div>
           <div class="income-row">
             <span class="income-row-label">03 · Affiliate</span>
-            <span class="income-row-val amber">£0.12</span>
+            <span class="income-row-val amber">£0.57</span>
           </div>
           <div class="income-row">
             <span class="income-row-label">04 · Games</span>
@@ -1445,7 +1467,7 @@
           </div>
           <div class="income-row income-total-row">
             <span class="income-row-label">Total confirmed</span>
-            <span class="income-row-val green">£24.52+</span>
+            <span class="income-row-val green">£58.84+</span>
           </div>
         </div>
         <div class="income-cta">
